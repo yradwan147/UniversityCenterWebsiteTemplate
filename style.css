@@ -1,0 +1,213 @@
+body {
+    background: rgb(136,203,171);
+    margin: 0;
+    font-family: 'Merriweather', serif;
+    color: #000;
+}
+
+h1 {
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 5em;
+    margin: 1em 1rem;
+    text-align: center;
+    padding-top : 45vh;
+}
+
+.pic_header {
+    background-image: url("assets/bg.png");
+    min-height : 90vh;
+}
+
+h2 {
+    border-bottom: 1px solid #000;
+    font-family: 'Oxygen', Sans-Serif;
+    font-size: 3em;
+    color: #fff;
+}
+
+p {
+    line-height: 1.6em;
+    color: #eee;
+}
+
+ul {
+    list-style-type: none;
+    padding-left : 0;
+    width : 450px;
+}
+
+.video_item iframe {
+    padding : 5px;
+}
+
+.tags li {
+    border-radius: 5px;
+    background : white;
+    display : inline-block;
+    width : 200px;
+    padding : 4px;
+    margin : 5px;
+}
+
+main {
+    margin: 10vh 1em 10vh;
+}
+
+section {
+    position: relative;
+    min-height: 80vh;
+}
+
+section.your-active-class {
+    background: rgb(0, 0, 0);
+    background: linear-gradient(0deg, rgba(133, 250, 0, 0.1) 0%, rgba(133, 250, 0, 0) 100%);
+}
+
+section.your-active-class .landing__container::before {
+    opacity: 1;
+    animation: rotate 4s linear 0s infinite forwards;
+}
+
+section.your-active-class .landing__container::after {
+    opacity: 1;
+    animation: rotate 5s linear 0s infinite forwards reverse;
+}
+
+/* Section Active Styles Keyframe Animations */
+@keyframes rotate {
+	from {
+		transform: rotate(0deg)
+		           translate(-1em)
+		           rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg)
+		           translate(-1em) 
+		           rotate(-360deg);
+	}
+}
+
+.landing__container {
+    padding: 1em;
+    text-align: left;
+}
+
+
+.gal_img {
+    width : 450px;
+    height : 300px;
+}
+
+.gal_item_date {
+    font-size: 1.5em;
+    color : darkblue;
+}
+
+.gal_item {
+    display: inline-block;
+    width : 470px;
+}
+
+gallery {
+    display : inline-block;
+    width : 100%;
+}
+
+/* Navigation Styles*/
+.nav_img {
+    display : inline-block;
+    height : 100px;
+}
+.navbar__menu {
+    width : 100%;
+    padding-left : 0;
+    margin : 0;
+    background-color : black;
+}
+.navbar__menu ul {
+    display : inline-block;
+    width : 100%;
+    padding-left: 0;
+    margin: 0;
+    text-align: right;
+    background-color: black;
+}
+
+.navbar__menu li {
+    display: inline-block;
+    font-size: 30px;
+    color: #fff;
+    padding: 20px;
+    background-color: black;
+}
+
+/* Active nav element coloring */
+.nav_element.active {
+    color : rgb(126, 11, 91);
+}
+
+.navbar__menu .menu__link {
+    display: block;
+    padding: 1em;
+    font-weight: bold;
+    text-decoration: none;
+    color: #000;
+}
+
+.navbar__menu .menu__link:hover {
+    background: #333;
+    color: #fff;
+    transition: ease 0.3s all;
+}
+
+#navigation {
+    overflow : hidden;
+}
+
+.project {
+    display : inline-block;
+    padding : 8px;
+    margin : 25px;
+    background-color : white;
+    border : ridge black;
+    width : 400px;
+    height : 100%;
+    color : black;
+    text-align: center;
+}
+
+.project p {
+    color :black;
+}
+
+.project_img {
+    width : 380px;
+}
+
+.quotes li {
+    background-color : white;
+    width : 1200px;
+    height : 110px;
+}
+
+.quotes_list ul {
+    display : inline-block;
+    background-color: white;
+}
+
+.quotes p {
+    float : right;
+    text-align: center;
+}
+
+.quotes img {
+    float : left;
+    height : 200px;
+}
+
+footer {
+    width:100%;
+    height:100px;
+    margin:0px;
+    background-color : black;
+}
